@@ -1,5 +1,6 @@
-// El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { sayHello } from './demo.js';
+import { printSelect } from './printSelect.js';
 
-sayHello();
+const themesElement = document.getElementById('themes');
+
+themesElement.addEventListener('change', printSelect);
